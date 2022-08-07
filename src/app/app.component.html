@@ -3,27 +3,33 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link" aria-current="page" href="#" [routerLink]="['home']" [routerLinkActive]="'active'">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Stock</a>
+          <a class="nav-link" href="#" [routerLink]="['stock']" [routerLinkActive]="'active'">Stock</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Buscar</a>
+          <a class="nav-link" href="#" [routerLink]="['buscar']" [routerLinkActive]="'active'">Buscar</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Añadir Cliente</a>
+          <a class="nav-link" href="#" [routerLink]="['addCliente']" [routerLinkActive]="'active'">Añadir Cliente</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Productos Vendidos</a>
+          <a class="nav-link" href="#" [routerLink]="['productosVendidos']" [routerLinkActive]="'active'">Productos Vendidos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Clientes</a>
+          <a class="nav-link" href="#" [routerLink]="['clientes']" [routerLinkActive]="'active'">Clientes</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Proveedores</a>
+          <a class="nav-link" href="#" [routerLink]="['proveedores']" [routerLinkActive]="'active'">Proveedores</a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
+
+<main class="flex-shrink-0">
+  <div class="container mt-3">
+    <router-outlet></router-outlet>
+  </div>
+</main>

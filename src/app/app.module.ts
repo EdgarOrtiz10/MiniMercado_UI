@@ -8,6 +8,11 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './features/home/home.component';
 import { StockComponent } from './features/stock/stock.component';
 import { AddclienteComponent } from './features/addcliente/addcliente.component';
+import { AppRoutingModule } from './app-routing.module';
+import { BuscarComponent } from './features/buscar/buscar.component';
+import { ProductosvendidosComponent } from './features/productosvendidos/productosvendidos.component';
+import { ClientesComponent } from './features/clientes/clientes.component';
+import { ProveedoresComponent } from './features/proveedores/proveedores.component';
 
 
 @NgModule({
@@ -19,10 +24,15 @@ import { AddclienteComponent } from './features/addcliente/addcliente.component'
     HomeComponent,
     StockComponent,
     AddclienteComponent,
+    BuscarComponent,
+    ProductosvendidosComponent,
+    ClientesComponent,
+    ProveedoresComponent,
   ],
   imports: [
-    BrowserModule
-  ],
+    BrowserModule,
+    AppRoutingModule,
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
