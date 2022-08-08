@@ -15,6 +15,7 @@ import { ClientesComponent } from './features/clientes/clientes.component';
 import { ProveedoresComponent } from './features/proveedores/proveedores.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
