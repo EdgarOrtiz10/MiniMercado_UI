@@ -68,7 +68,7 @@
               "browserTarget": "MiniMercado_UI_Edgar:build:production"
             },
             "development": {
-              "browserTarget": "MiniMercado_UI_Edgar:build:development"
+              "browserTarget": "MiniMercado_UI:build:development"
             }
           },
           "defaultConfiguration": "development"

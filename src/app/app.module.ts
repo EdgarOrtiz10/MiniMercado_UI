@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { NavComponent } from './components/nav/nav.component';
@@ -13,6 +14,7 @@ import { BuscarComponent } from './features/buscar/buscar.component';
 import { ProductosvendidosComponent } from './features/productosvendidos/productosvendidos.component';
 import { ClientesComponent } from './features/clientes/clientes.component';
 import { ProveedoresComponent } from './features/proveedores/proveedores.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -33,6 +35,8 @@ import { ProveedoresComponent } from './features/proveedores/proveedores.compone
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
+    FormsModule
     ],
   providers: [],
   bootstrap: [AppComponent]

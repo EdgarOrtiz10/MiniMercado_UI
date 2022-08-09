@@ -1,63 +1,14 @@
 <h2 class="text-center">Listado de Clientes</h2>
 <hr>
 <div class="row">
-  <div class="col">
+  <div class="col-md-3" *ngFor="let cliente of clientes">
     <div class="card" style="width: 15rem;">
       <div class="card-body">
-        <h5 class="card-title">Nombre Cliente</h5>
-        <h6 class="card-subtitle mb-2 text-muted">1036675569</h6>
-        <p class="card-subtitle mb-2 text-muted">Dirección: calle 23A #11-30</p>
-        <p class="card-subtitle mb-2 text-muted">Sexo: Masculino</p>
-        <p class="card-subtitle mb-2 text-muted">Correo: 2129eaoe@gmail.com</p>
+        <h5 class="card-title">{{cliente.nombre1}} {{cliente.nombre2}} {{cliente.apellido1}} {{cliente.apellido2}}</h5>
+        <h6 class="card-subtitle mb-2 text-muted">{{cliente.idCliente}}</h6>
+        <p class="card-subtitle mb-2 text-muted">{{cliente.direccion}}</p>
+        <p class="card-subtitle mb-2 text-muted">{{cliente.sexo}}</p>
+        <p class="card-subtitle mb-2 text-muted">{{cliente.correo}}</p>
       </div>
     </div>
   </div>
-
-  <div class="col">
-    <div class="card" style="width: 15rem;">
-      <div class="card-body">
-        <h5 class="card-title">Nombre Cliente</h5>
-        <h6 class="card-subtitle mb-2 text-muted">1036675569</h6>
-        <p class="card-subtitle mb-2 text-muted">Dirección: calle 23A #11-30</p>
-        <p class="card-subtitle mb-2 text-muted">Sexo: Masculino</p>
-        <p class="card-subtitle mb-2 text-muted">Correo: 2129eaoe@gmail.com</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="col">
-    <div class="card" style="width: 15rem;">
-      <div class="card-body">
-        <h5 class="card-title">Nombre Cliente</h5>
-        <h6 class="card-subtitle mb-2 text-muted">1036675569</h6>
-        <p class="card-subtitle mb-2 text-muted">Dirección: calle 23A #11-30</p>
-        <p class="card-subtitle mb-2 text-muted">Sexo: Masculino</p>
-        <p class="card-subtitle mb-2 text-muted">Correo: 2129eaoe@gmail.com</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="col">
-    <div class="card" style="width: 15rem;">
-      <div class="card-body">
-        <h5 class="card-title">Nombre Cliente</h5>
-        <h6 class="card-subtitle mb-2 text-muted">1036675569</h6>
-        <p class="card-subtitle mb-2 text-muted">Dirección: calle 23A #11-30</p>
-        <p class="card-subtitle mb-2 text-muted">Sexo: Masculino</p>
-        <p class="card-subtitle mb-2 text-muted">Correo: 2129eaoe@gmail.com</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="col">
-    <div class="card" style="width: 15rem;">
-      <div class="card-body">
-        <h5 class="card-title">Nombre Cliente</h5>
-        <h6 class="card-subtitle mb-2 text-muted">1036675569</h6>
-        <p class="card-subtitle mb-2 text-muted">Dirección: calle 23A #11-30</p>
-        <p class="card-subtitle mb-2 text-muted">Sexo: Masculino</p>
-        <p class="card-subtitle mb-2 text-muted">Correo: 2129eaoe@gmail.com</p>
-      </div>
-    </div>
-  </div>
-</div>
