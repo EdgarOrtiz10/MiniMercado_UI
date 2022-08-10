@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Clientes } from './models/proveedores';
+import { Proveedores } from './models/proveedores';
 import { ProveedoresService } from './services/proveedores.service';
 
 @Component({
@@ -8,7 +8,7 @@ import { ProveedoresService } from './services/proveedores.service';
   styleUrls: ['./proveedores.component.css']
 })
 export class ProveedoresComponent implements OnInit {
-  Proveedores:Proveedores[] = []
+  proveedores:Proveedores[] = []
 
   constructor(private proveedoresService:ProveedoresService) { }
 
@@ -20,3 +20,4 @@ export class ProveedoresComponent implements OnInit {
       this.proveedores = data;
     });
   }
+}
