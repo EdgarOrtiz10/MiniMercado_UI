@@ -30,7 +30,7 @@ export class AddclienteComponent implements OnInit {
     this.addClienteService.createAddCliente(addcliente).subscribe(data=>{
 
       this.getAddCliente();
-      console.log(data);
+      alert("Usuario Registrado Exitosamente");
     });
   }
 }
