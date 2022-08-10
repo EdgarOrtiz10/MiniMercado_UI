@@ -3,49 +3,55 @@
     <h2>Nuevo Cliente</h2>
     <hr>
   </div>
-  <div class="col">
-    <form>
-      <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">Cedula</label>
-        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-      </div>
-      <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">Primer Nombre</label>
-        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-      </div>
-      <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">Segundo Nombre</label>
-        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-      </div>
-      <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">Primer Apellido</label>
-        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-      </div>
-      <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">Segundo Apellido</label>
-        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-      </div>
-      <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">Dirección</label>
-        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-      </div>
-      <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">Telefono</label>
-        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-      </div>
-      <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">Sexo</label>
-        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-      </div>
-      <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">Correo</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  <div class="col-8">
+    <form (ngSubmit)="onSubmit(frmAddCliente.value)" #frmAddCliente="ngForm">
+      <div class="row">
+        <div class="col">
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Cedula</label>
+            <input type="text" class="form-control" id="idCliente" name="idCliente" ngModel>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Primer Nombre</label>
+            <input type="text" class="form-control" id="nombre1" name="nombre1"  ngModel>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Segundo Nombre</label>
+            <input type="text" class="form-control" id="nombre2" name="nombre2" ngModel>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Primer Apellido</label>
+            <input type="text" class="form-control" id="apellido1" name="apellido1" ngModel>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Segundo Apellido</label>
+            <input type="text" class="form-control" id="apellido2" name="apellido2" ngModel>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Dirección</label>
+            <input type="text" class="form-control" id="direccion" name="direccion" ngModel>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Telefono</label>
+            <input type="number" class="form-control" id="telefono" name="telefono" ngModel>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Sexo</label>
+            <input type="text" class="form-control" id="sexo" name="sexo" ngModel>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Correo</label>
+            <input type="email" class="form-control" id="correo" name="correo" ngModel>
+          </div>
+        </div>
+        <div class="col">
+          <div class="col align-self-center">
+            <div class="d-grid gap-2">
+              <button type="submit" class="btn btn-primary btn-block">Añadir</button>
+            </div>
+           </div>
+        </div>
       </div>
     </form>
   </div>
-  <div class="col align-self-center">
-    <div class="d-grid gap-2">
-      <button type="submit" class="btn btn-primary btn-block">Añadir</button>
-    </div>
-   </div>
 </div>

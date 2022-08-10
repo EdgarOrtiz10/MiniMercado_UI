@@ -20,15 +20,4 @@ export class ClientesComponent implements OnInit {
       this.clientes = data;
     });
   }
-/*
-  onSubmit(cliente: Clientes): void{
-    console.log(cliente);
-    //Consumir el API de creacion
-    this.clienteService.createClientes(cliente).subscribe(data=>{
-
-      this.getClientes();
-
-    });
-  }
-*/
 }

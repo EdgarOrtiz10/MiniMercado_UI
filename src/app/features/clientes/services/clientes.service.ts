@@ -9,6 +9,11 @@ import { Clientes } from '../models/clientes';
 export class ClientesService {
 
   constructor(private httpClient: HttpClient) { }
+
+  ngOnInit(): void {
+    this.getClientes();
+  }
+
   getClientes(): Observable<Clientes[]> {
     let response = this.httpClient.get('https://localhost:7086/api/Cliente')
     .pipe(map((clientes:any) => clientes));
