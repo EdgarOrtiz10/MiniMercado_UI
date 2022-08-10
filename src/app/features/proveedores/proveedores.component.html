@@ -1,58 +1,15 @@
 <h2 class="text-center">Proveedores</h2>
 <hr>
 <div class="row">
+  <div class="col-md-3" *ngFor="let proveedor of proveedores">
   <div class="col">
     <div class="card" style="width: 15rem;">
       <div class="card-body">
-        <h5 class="card-title">Nombre Proovedor</h5>
-        <h6 class="card-subtitle mb-2 text-muted">Telefono: ******</h6>
-        <p class="card-subtitle mb-2 text-muted">Dirección: calle 23A #11-30</p>
-        <p class="card-subtitle mb-2 text-muted">Correo: 2129eaoe@gmail.com</p>
+        <h5 class="card-title">{{proveedor.nombreProveedor}}</h5>
+        <h6 class="card-subtitle mb-2 text-muted">{{proveedor.idProveedor}}</h6>
+        <h6 class="card-subtitle mb-2 text-muted">{{proveedor.direccionProveedor}}</h6>
+        <h6 class="card-subtitle mb-2 text-muted">{{proveedor.telefonoProveedor}}</h6>
+        <h6 class="card-subtitle mb-2 text-muted">{{proveedor.correoProveedor}}</h6>
       </div>
     </div>
   </div>
-
-  <div class="col">
-    <div class="card" style="width: 15rem;">
-      <div class="card-body">
-        <h5 class="card-title">Nombre Proovedor</h5>
-        <h6 class="card-subtitle mb-2 text-muted">Telefono: ******</h6>
-        <p class="card-subtitle mb-2 text-muted">Dirección: calle 23A #11-30</p>
-        <p class="card-subtitle mb-2 text-muted">Correo: 2129eaoe@gmail.com</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="col">
-    <div class="card" style="width: 15rem;">
-      <div class="card-body">
-        <h5 class="card-title">Nombre Proovedor</h5>
-        <h6 class="card-subtitle mb-2 text-muted">Telefono: ******</h6>
-        <p class="card-subtitle mb-2 text-muted">Dirección: calle 23A #11-30</p>
-        <p class="card-subtitle mb-2 text-muted">Correo: 2129eaoe@gmail.com</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="col">
-    <div class="card" style="width: 15rem;">
-      <div class="card-body">
-        <h5 class="card-title">Nombre Proovedor</h5>
-        <h6 class="card-subtitle mb-2 text-muted">Telefono: ******</h6>
-        <p class="card-subtitle mb-2 text-muted">Dirección: calle 23A #11-30</p>
-        <p class="card-subtitle mb-2 text-muted">Correo: 2129eaoe@gmail.com</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="col">
-    <div class="card" style="width: 15rem;">
-      <div class="card-body">
-        <h5 class="card-title">Nombre Proovedor</h5>
-        <h6 class="card-subtitle mb-2 text-muted">Telefono: ******</h6>
-        <p class="card-subtitle mb-2 text-muted">Dirección: calle 23A #11-30</p>
-        <p class="card-subtitle mb-2 text-muted">Correo: 2129eaoe@gmail.com</p>
-      </div>
-    </div>
-  </div>
-</div>

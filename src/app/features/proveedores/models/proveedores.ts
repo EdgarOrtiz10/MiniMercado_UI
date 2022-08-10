@@ -1,7 +1,7 @@
-export interface Addcliente {
-  idProducto: number;
-  nomnreProveedor: string;
+export interface Proveedores {
+  idProveedor: number;
+  nombreProveedor: string;
   direccionProveedor: string;
-  telefonoProveedor: string;
-  corre: string;
+  telefonoProveedor: number;
+  correoProveedor: string;
 }
